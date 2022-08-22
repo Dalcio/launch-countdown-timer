@@ -1,0 +1,71 @@
+.timer-container {
+  display: grid;
+  row-gap: 2rem;
+  justify-items: center;
+}
+
+.time {
+  background: var(--dark-desaturated-blue);
+  color: var(--soft-red);
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-weight: var(--weight);
+  box-shadow: 0rem 1rem 0px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.time:before,
+.time:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--mostly-dark-blue);
+  top: calc(50% - 10px);
+  z-index: 2;
+}
+
+.time:before {
+  left: -10px;
+}
+
+.time:after {
+  right: -10px;
+}
+
+.time > p {
+  position: relative;
+  z-index: 1;
+}
+
+.name {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--grayish-blue);
+}
+
+.hack-div {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background: var(--very-dark-blue);
+  opacity: 0.4;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hack-div.top {
+  bottom: unset;
+  top: 0;
+  opacity: 0.2;
+}
+
+@media screen and (min-width: 768px) {
+  .time {
+    font-size: 5.5rem;
+  }
+}
