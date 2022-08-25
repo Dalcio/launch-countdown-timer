@@ -1,6 +1,6 @@
 # Lauching countown timer
 
-![Countdown](./screenshots/countdown-timer.png.png)
+![Countdown](./screenshots/countdown-timer.png)
 
 ### Built with
 
@@ -11,7 +11,7 @@
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/Dalcio/launch-countdown-timer)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## Author
